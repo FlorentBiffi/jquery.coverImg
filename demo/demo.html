@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>test js</title>
+	
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/styles.css" />
+	<link rel="stylesheet" href="css/prettify.css" />
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+	<script src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
+	
+	
+</head>
+<body>
+	
+	<div class="container-img">
+		<img src="uploads/galaxy.jpg" alt="galaxy" class="imgbg"/>
+		
+		<div class="container">
+			<h1>jQuery.CoverImg - fullscreen demo</h1>
+			<p><b>Note: </b>This fullscreen demo works with a "img" html tag but can also works with a background-image on the container. Scroll for see the others demos and resize your window for see the result. </p>
+
+<pre class="prettyprint linenums">
+$(".container-img").coverImg();</pre>
+
+		</div>
+	</div>
+	
+	
+	<div class="container">
+	
+		<h1>jQuery.CoverImg - responsive demo</h1>
+		<p><b>Note: </b>The container have a fixed size. This size change in function of size of window (responsive). In this demo jQuery.CoverImg works with a "img" html tag. Smartresize option active the debouncing function from John Hann.</p>
+		
+		<div class="container-img1">
+			<img src="uploads/galaxy.jpg" alt="galaxy" class="imgbg"/>
+		</div>
+
+<pre class="prettyprint linenums">$(".container-img1").coverImg(
+{
+	'fullscreen': false,
+	'smartresize' : true //debouncing function from John Hann
+});</pre>
+
+		<hr />
+		
+		<p><b>Note: </b>jQuery.CoverImg width fixed container size and background image on container. </p>
+		
+		<div class="container-img2"></div>
+		
+		
+		
+		<pre class="prettyprint linenums">
+$(".container-img2").coverImg(
+{
+	'type': 'background',
+	'fullscreen': false,
+	'imgWidth' : 1920, //this value is equal at the width of image
+	'imgHeight' : 1200 //this value is equal at the height of image
+});</pre>
+	<p class="alert"><b>Warning:</b> When 'type' option is 'background', the 'imgWidth' and 'imgHeight' options are mandatory !</p>
+		
+	</div>
+	
+	<footer>
+		<div class="container">
+			<p class="pull-left">jQuery.CoverImg</p>
+			<p class="pull-right">Author : <a href="#">Florent BIFFI</a></p>
+		</div>
+	</footer>
+	
+	<script src="../js/jquery.coverimg.js"></script>
+	
+	<script type="text/javascript">
+	
+		$(".container-img").coverImg();
+	
+		$(".container-img1").coverImg(
+		{
+			'fullscreen': false,
+			'smartresize' : true
+		});
+		
+		$(".container-img2").coverImg(
+		{
+			'type': 'background',
+			'fullscreen': false,
+			'imgWidth' : 1920,
+			'imgHeight' : 1200
+		});
+	</script>
+	
+	<script type="text/javascript">
+		
+		// make code pretty
+	
+		(function(jQuery){
+		  jQuery( document ).ready( function() {
+		    prettyPrint();
+		  } );
+		 
+		}(jQuery))
+	</script>
+	
+</body>
+</html>
