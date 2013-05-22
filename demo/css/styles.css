@@ -1,36 +1,35 @@
+/************************************************************************/
+/* Global styles
+/************************************************************************/
+
 body{
 	font-family: Helvetica, arial, freesans, clean, sans-serif;
 	color: rgb(51, 51, 51);
 	
 	-webkit-font-smoothing: antialiased;
-	
 } 
-
-.container {
-	position: relative;
-	margin: 50px auto;
-	width: 960px;
-	
-	z-index: 20;
-}
 
 h1 {
 	font-size: 38px;
 	font-weight: bold;
-	padding-bottom: 10px;
-	border-bottom: 1px solid #eee;
-	margin-bottom: 20px;
-	
 	text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+	border-bottom: 1px solid #eee;
+	
+	padding-bottom: 10px;
+	margin-bottom: 20px;	
 }
 
 p {
 	font-size: 15px;
 	font-weight: normal;
-	margin-bottom: 20px;
 	line-height: 25px;
-	
 	text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+	
+	margin-bottom: 20px;
+}
+
+p b {
+	font-weight: bold;
 }
 
 hr {
@@ -43,10 +42,6 @@ hr {
 a {
 	color: #4183c4;
 	text-decoration: none;
-}
-
-p b {
-	font-weight: bold;
 }
 
 pre {
@@ -91,6 +86,14 @@ ol {
 	list-style: decimal;
 }
 
+.container {
+	position: relative;
+	margin: 50px auto;
+	width: 960px;
+	
+	z-index: 20;
+}
+
 .pull-left {
 	float: left;
 }
@@ -99,18 +102,21 @@ ol {
 	float: right;
 }
 
-footer p{
-	font-size: 12px;
-	line-height: 18px;
-}
-
 footer .container {
 	border-top: 1px solid #eee;
 	padding-top: 20px;
 	color: rgb(119, 119, 119);
 }
 
+footer p {
+	font-size: 12px;
+	line-height: 18px;
+}
 
+
+/************************************************************************/
+/* Container img styles
+/************************************************************************/
 
 
 .container-img {
@@ -159,6 +165,11 @@ footer .container {
 	background-image: url("../uploads/galaxy.jpg");
 	background-repeat: no-repeat;
 }
+
+
+/************************************************************************/
+/* Responsive
+/************************************************************************/
 
 @media (min-width: 768px) and (max-width: 979px) { 
 	.container, .container-img1, .container-img2 {
